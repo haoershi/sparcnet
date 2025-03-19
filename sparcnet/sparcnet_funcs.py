@@ -9,10 +9,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from .DenseNetClassifier import *
+import os
 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
-model_cnn = torch.load("model_1130.pt", map_location=torch.device(device), weights_only=False)
+model_path = os.path.join(os.path.dirname(__file__), "model_1130.pt")
+model_cnn = torch.load(model_path, map_location=torch.device(device), weights_only=False)
 model_cnn.eval()
 
 
