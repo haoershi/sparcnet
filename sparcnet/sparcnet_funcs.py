@@ -8,7 +8,7 @@ from collections import OrderedDict
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from DenseNetClassifier import *
+from .DenseNetClassifier import *
 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
