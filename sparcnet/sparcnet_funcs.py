@@ -8,7 +8,7 @@ from collections import OrderedDict
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from .DenseNetClassifier import _DenseLayer, _DenseBlock, _Transition, DenseNetEnconder, DenseNetClassifier
+from .DenseNetClassifier import *
 import os
 
 
