@@ -4,7 +4,7 @@ setup(
     name='sparcnet',  # Replace with your package's name
     version='0.1.0',    # Version number
     packages=find_packages(),  # Automatically find all packages in the repo
-    install_requires=['kneed','torch','torchvision'
+    install_requires=['kneed','torch==2.4.1','torchvision'
     ],
     package_data={
         "sparcnet": ["model_1130.pt"],
